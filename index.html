@@ -19,8 +19,13 @@
         li { margin-bottom: 8px; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; }
         .card { border: 1px solid #e0e0e0; border-radius: 6px; padding: 15px; background: #fafafa; }
-        a.link-btn { display: inline-block; background: var(--primary); color: white; padding: 6px 12px; border-radius: 4px; text-decoration: none; font-size: 0.9rem; margin-top: 8px; }
+        
+        /* 連結與按鈕樣式 */
+        a.inline-link { color: #0275d8; text-decoration: underline; font-weight: 500; }
+        a.inline-link:hover { color: #014c8c; }
+        a.link-btn { display: inline-block; background: var(--primary); color: white; padding: 8px 14px; border-radius: 4px; text-decoration: none; font-size: 0.9rem; margin-top: 8px; margin-right: 5px; transition: background 0.2s; }
         a.link-btn:hover { background: var(--secondary); }
+        
         table { width: 100%; border-collapse: collapse; margin-top: 15px; }
         th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
         th { background-color: #f2f2f2; color: var(--primary); }
@@ -47,21 +52,21 @@
     <div id="about" class="section-card">
         <h2>👨‍🏫 關於教師（Cheng-Ching Wu）</h2>
         <ul>
-            <li><strong>出生背景：</strong> 1974 年出生於台灣苗栗縣苑裡鎮。</li>
+            <li><strong>出生背景：</strong> 1974 年出生於台灣苗栗縣苑裡鎮[cite: 1]。</li>
             <li><strong>求學歷程：</strong>
                 <ul>
-                    <li>國小：就讀家圍牆邊的藍田國小（中午回家吃飯看布袋戲的年代）。</li>
-                    <li>國中：苗栗縣立致民國中。</li>
-                    <li>高中：省立台中一中（去電動間打電玩的時代）。</li>
-                    <li>大學與研究所：國立中正大學資訊工程學系學士（1996年）與碩士（1998年）。</li>
+                    <li>國小：就讀家圍牆邊的藍田國小（中午回家吃飯看布袋戲的年代）[cite: 1]。</li>
+                    <li>國中：苗栗縣立致民國中[cite: 1]。</li>
+                    <li>高中：省立台中一中（去電動間打電玩的時代）[cite: 1]。</li>
+                    <li>大學與研究所：國立中正大學資訊工程學系學士（1996年）與碩士（1998年）[cite: 1]。</li>
                 </ul>
             </li>
             <li><strong>工作經歷：</strong>
                 <ul>
-                    <li>實習教師：國立嘉義高級工業職業學校。</li>
-                    <li>軍旅生涯：國軍花蓮總醫院擔任資訊官。</li>
-                    <li>國中教職：台中縣立大甲國中擔任電腦教師。</li>
-                    <li>高中教職：於 2001 年（民國90年）8月1日轉任國立苑裡高級中學任教至今。</li>
+                    <li>實習教師：國立嘉義高級工業職業學校[cite: 1]。</li>
+                    <li>軍旅生涯：國軍花蓮總醫院擔任資訊官[cite: 1]。</li>
+                    <li>國中教職：台中縣立大甲國中擔任電腦教師[cite: 1]。</li>
+                    <li>高中教職：於 2001 年（民國90年）8月1日轉任國立苑裡高級中學任教至今[cite: 1]。</li>
                 </ul>
             </li>
         </ul>
@@ -70,7 +75,7 @@
     <!-- 任教學校介紹 -->
     <div id="ylsh" class="section-card">
         <h2>🏫 目前任教學校：國立苑裡高級中學 (YLSH)</h2>
-        <p>吳老師自民國 90 年（2001年）8月起即轉任至此，是見證了學校第一屆學生入學與成長的元老級教師。</p>
+        <p>吳老師自民國 90 年（2001年）8月起即轉任至此，是見證了學校第一屆學生入學與成長的元老級教師[cite: 1]。</p>
         <ul>
             <li><strong>創校歷史：</strong>學校於 1998 年開始籌備，2000 年 2 月正式改隸為「國立苑裡高級中學」，並於 2001 年 9 月迎來第一屆新生正式上課。</li>
             <li><strong>學校精神：</strong>校訓為「誠樸精勤創新卓越」，期許學生在品格與學業上不斷精進。</li>
@@ -90,8 +95,8 @@
         <div class="grid">
             <div class="card">
                 <h3>1. Git 及 GitHub</h3>
-                <p>程式與網頁開發者必備技能！零基礎快速上手版本控制要訣。</p>
-                <p>拯救資工系學生的基本素養—GitHub Pages 使用教學。</p>
+                <p>• <a href="https://www.youtube.com/watch?v=FKXRiAiQFiY" target="_blank" class="inline-link">程式與網頁開發者必備技能！Git 和 GitHub 零基礎快速上手，輕鬆掌握版本控制的要訣！ 🔗</a></p>
+                <p>• <a href="https://www.youtube.com/watch?v=NovKS8kWYAg" target="_blank" class="inline-link">拯救資工系學生的基本素養—Github Page 使用教學 🔗</a></p>
             </div>
             <div class="card">
                 <h3>2. 物聯網 IC 程式設計</h3>
@@ -109,8 +114,9 @@
             </div>
             <div class="card">
                 <h3>5. 實作教學影片</h3>
-                <p>• Canva AI 實作教學（一 & 二）</p>
-                <p>• 取得天氣 API 授權碼範例教學</p>
+                <p>• <a href="https://www.youtube.com/watch?v=Rdoj0XVbHUA" target="_blank" class="inline-link">Canva AI 實作 (一) 🔗</a></p>
+                <p>• <a href="https://www.youtube.com/watch?v=1dUJu9YIKu4" target="_blank" class="inline-link">Canva AI 實作 (二) 🔗</a>[cite: 5]</p>
+                <p>• <a href="https://www.youtube.com/watch?v=Gk12R4idh3g" target="_blank" class="inline-link">取得天氣 API 授權碼 🔗</a>[cite: 5]</p>
             </div>
         </div>
     </div>
@@ -129,23 +135,23 @@
             <tbody>
                 <tr>
                     <td><strong>01</strong></td>
-                    <td>課程學習成果</td>
-                    <td>B.書面報告、C.實作作品、D.自然科學領域探究與實作成果/特殊班級成果、E.社會領域探究活動成果/特殊班級成果。</td>
+                    <td>課程學習成果[cite: 3]</td>
+                    <td>B.書面報告、C.實作作品、D.自然科學領域探究與實作成果/特殊班級成果、E.社會領域探究活動成果/特殊班級成果[cite: 3]。</td>
                 </tr>
                 <tr>
                     <td><strong>02</strong></td>
-                    <td>多元表現</td>
-                    <td>F.高中自主學習計畫與成果、G.社團活動經驗、H.擔任幹部經驗、I.服務學習經驗、J.競賽表現、K.非修課紀錄成果作品、L.檢定證照、M.特殊優良表現證明、N.多元表現綜整心得，以及週會/班級活動/講座/營隊/參訪等。</td>
+                    <td>多元表現[cite: 3]</td>
+                    <td>F.高中自主學習計畫與成果、G.社團活動經驗、H.擔任幹部經驗、I.服務學習經驗、J.競賽表現、K.非修課紀錄成果作品、L.檢定證照、M.特殊優良表現證明、N.多元表現綜整心得，以及週會/班級活動/講座/營隊/參訪等[cite: 3]。</td>
                 </tr>
                 <tr>
                     <td><strong>03</strong></td>
-                    <td>學習歷程自述</td>
-                    <td>O.高中學習歷程反思、P.就讀動機、Q.未來學習計畫與生涯規劃。</td>
+                    <td>學習歷程自述[cite: 3]</td>
+                    <td>O.高中學習歷程反思、P.就讀動機、Q.未來學習計畫與生涯規劃[cite: 3]。</td>
                 </tr>
                 <tr>
                     <td><strong>04</strong></td>
-                    <td>其他項目</td>
-                    <td>各校系特別要求之補充資料。</td>
+                    <td>其他項目[cite: 3]</td>
+                    <td>各校系特別要求之補充資料[cite: 3]。</td>
                 </tr>
             </tbody>
         </table>
